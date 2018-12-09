@@ -1,0 +1,7 @@
+<div metal:use-macro="load: plantilla1.pt" i18n:domain="penjats">
+    <div metal:fill-slot="content">
+	
+<p i18n:translate=""> Dades registrades </p>
+
+	</div>
+</div>

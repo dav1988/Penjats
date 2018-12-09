@@ -1,0 +1,134 @@
+<html i18n:domain="penjats" lang="{{request.locale_name}}" xmlns="http://www.w3.org/1999/xhtml" xmlns:tal="http://xml.zope.org/namespaces/tal">
+<head>
+  <meta charset= "utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/lib/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/w3.css" />
+  <link rel="stylesheet" type="text/css" href="css/plantilla1.css"/>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <link rel="shortcut icon" href="${request.static_url('penjats:static/pyramid-16x16.png')}">
+  <link href="${request.static_url('penjats:static/plantilla1.css')}" rel="stylesheet">
+  <link href="${request.static_url('penjats:static/w3.css')}" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<title>Diades</title>
+</head>
+<body>
+	<header>
+  		<div class="w3-container w3-red2">
+    		<div style="margin-top: 15px;margin-bottom: 15px"   id="logo">
+        		<a href="index.html"><img  src="img/2n7pqvb.png" border="0" alt="logo penjats"></a>
+    		</div>
+    		<div style="margin-top: 20px" id="logo2">
+    			<h4><strong>Registre diades</strong></h4>
+    		</div>
+    		<!--
+    		<div class="caixaidioma">
+      			<div style="margin-bottom: 5px" id="idioma">
+      				<a href="canvia_idioma.html?idioma=default?url=default" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>CA</strong></a>
+      			</div>
+      			<div style="margin-bottom: 5px" id="idioma">
+      				<a href="canvia_idioma.html?idioma=es" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>ES</strong></a>
+      			</div>
+      			<div style="margin-bottom: 5px" id="idioma">
+      				<a href="canvia_idioma.html?idioma=en" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>EN</strong></a>
+      			</div>
+    		</div>
+    		-->
+  		</div>
+	</header>
+
+
+	<form class="w3-container" method="POST" action="diades.html">
+		<p> 
+	    <!-- mentres no tinguem registre d'usuaris -->    
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Nom</b>
+	    </label>
+	    <input class="w3-input w3-border w3-sand" name="nom" type="text" placeholder="Nom i Cognom" required i18n:attributes="placeholder"></p>
+	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Diada</b></label>
+	    <br>
+	    <select name="Diada">
+		  	<option value="Grillats">Grillats (4 de maig)</option>
+		  	<option value="Emboirats">Emboirats (11 de maig)</option>
+		  	<option value="Penjats">Penjats (18 de maig)</option>
+		  	<option value="Bergants">Bergants (25 de maig)</option>
+			<option value="Llunatics">Llunatics (1 de juny)</option>
+		</select></p>
+	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Hora sortida</b></label>
+	    <input class="w3-sand w3-border" type="time" name="sortida" placeholder="Ex: 14:00" max="16:00" min="13:30" step="5" required>
+	    </p>
+	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Hora tornada</b></label>
+	    <input class="w3-sand w3-border" type="time" name="tornada" placeholder="Ex: 22:00" max="9:00" min="18:00" step="5" required>
+	    </p>
+	    
+	    <!-- Ja constarà al expedient
+	    <p>
+	    <label class="w3-label w3-text-brown"><b> Al·lergies Alimentices</b></label>
+	    <input class="w3-input w3-border w3-sand" name="last" type="text"></p>
+	    -->
+	   	<p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Portes cotxe?</b></label>
+	    <br>
+	    <input class="w3-radio" type="radio" name="cotxe" value="si" required>
+	    <label class="w3-validate" i18n:translate="">Si</label>
+
+	    <input class="w3-radio" type="radio" name="cotxe" value="no">
+	    <label class="w3-validate" i18n:translate="">No</label>
+	    </p>
+	    <p>
+	    <button class="w3-btn w3-brown" i18n:translate="">Enviar</button></p>
+	</form>
+
+	<div class="w3-card-4" >
+
+    <a href="index.html" onclick="w3_close()" class="w3-padding w3-hover-white"><strong i18n:translate="">Tornar</strong></a><br> 
+ 
+	</div>
+    <footer style="margin-top: 20px">
+      <center>
+        <div class="w3-row footer1">
+          <div class="w3-col l3"><a href="https://www.facebook.com/penjatscm/"> Penjats del Campus </a></div>
+          <div class="w3-col l3">tel. XXXXXXXXX</div>
+          <div class="w3-col l3">penjatsdelcm@gmail.com</div>
+          <div class="w3-col l3">© uncopyright</div>    
+        </div>
+         <div class="w3-row footer2">
+          <div class="w3-col m3"><a href="https://www.facebook.com/penjatscm/"> Penjats del Campus </a></div>
+          <div class="w3-col m3">tel. XXXXXXXXX</div>
+          <div class="w3-col m3">penjatsdelcm@gmail.com</p></div>
+          <div class="w3-col m3">© uncopyright</div>  
+        </div>
+        <div class="w3-row footer3">
+          <div class="w3-col s6""><a href="https://www.facebook.com/penjatscm/"> Penjats del Campus </a></div>
+          <div class="w3-col s6">tel. XXXXXXXXX</div>
+        </div>
+        <div class="w3-row footer3" style="margin-left: 2%; margin-top: 5px">
+          <div class="w3-col s6">penjatsdelcm@gmail.com</div>
+          <div class="w3-col s6">© uncopyright</div>
+          
+        </div>
+      </center>
+    </footer>
+
+	<script>
+		xhr= new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		       // Typical action to be performed when the document is ready:
+		       document.getElementsByName("Diada")[0].innerHTML = xhr.responseText;
+		    }
+		};
+
+
+	    xhr.open("GET",'http://192.168.1.14:6543/llista_diades.html',true)
+	    xhr.send();
+
+	</script>
+
+
+
+	</body>
+</html>

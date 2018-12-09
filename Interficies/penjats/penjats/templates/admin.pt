@@ -1,0 +1,85 @@
+<div metal:use-macro="load: plantilla1.pt" i18n:domain="penjats">
+    <div metal:fill-slot="content">
+	
+<h1 i18n:translate=""> Diades </h1>
+
+
+    <form class="w3-container" method="GET" action="admin.html">
+    <p>
+      <label class="w3-label w3-text-brown"><b i18n:translate="">Diada</b></label>
+      <br>
+    <select name="Diada">
+    <option tal:repeat="dada llista_dates_diada" value="${dada}">${dada}</option>
+    <option value="">Tots</option>
+    </select></p>
+    <input type="submit" value="cerca"/>
+    </form>
+    
+<table class="w3-table">
+  <tr>
+    <th>Nom</th>
+    <th>Diada</th>
+    <th>Hora Sortida</th>
+    <th>Hora tornada</th>
+    <th>Cotxe</th>
+  </tr>
+  <tr tal:repeat="inscrit inscrits">
+    <td tal:content="inscrit['nom']">David</td>
+    <td tal:content="inscrit['Diada']"></td>
+    <td tal:content="inscrit['sortida']"></td>
+    <td tal:content="inscrit['tornada']"></td>
+    <td tal:content="inscrit['cotxe']"></td>
+  </tr>
+</table>
+
+
+
+
+<h1 i18n:translate=""> Assajos </h1>
+
+
+    <form class="w3-container" method="GET" action="admin.html">
+    <p>
+      <label class="w3-label w3-text-brown"><b i18n:translate="">Assaig</b></label>
+      <br>
+    <select name="Assaig">
+    <option tal:repeat="dada llista_dates_assaig" value="${dada}">${dada}</option>
+    <option value="">Tots</option>
+    </select></p>
+    <input type="submit" value="cerca"/>
+    </form>
+
+
+<table class="w3-table">
+  <tr>
+    <th>Nom</th>
+    <th>Dia assaig</th>
+    <th>Hora entrada</th>
+    <th>Hora sortida</th>
+  </tr>
+  <tr tal:repeat="inscrit inscritsA">
+    <td tal:content="inscrit['nom']"></td>
+    <td tal:content="inscrit['DatesAssaig']"></td>
+    <td tal:content="inscrit['Arribada']"></td>
+    <td tal:content="inscrit['Sortida']"></td>
+  </tr>
+</table>
+
+
+
+<h2 i18n:translate="">Afegeix diada</h2>
+<form method="POST" action="admin.html">
+<input type="text" name="Diada"/>
+<input type="submit" value="Afegeix"/>
+
+<h2 i18n:translate="">Afegeix assaig</h2>
+<input type="text" name="Assaig"/>
+<input type="submit" value="Afegeix"/>
+
+<h2 i18n:translate="">Afegeix event</h2>
+<input type="text" name="event"/>
+<input type="submit" value="Afegeix"/>
+</form>
+
+	</div>
+</div>

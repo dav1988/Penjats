@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta charset= "utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="w3.css"/>
+<link rel="stylesheet" type="text/css" href="plantilla1.css"/>
+<title>Diades</title>
+<body>
+
+<div class="w3-card-4">
+  <div class="w3-container w3-red2">
+        <div style="margin-top: 5px;margin-bottom: 5px"   id="logo">
+            <a href="assistencia.html"><img  src="2n7pqvb.png" border="0" alt="logo penjats"></a>
+        </div>
+    <div id="logo">
+    <h4><strong>Registre Diades</strong></h4>
+    </div>
+  </div>
+  <form class="w3-container" action="/action_page.php">
+    <p> 
+    <!-- mentres no tinguem registre d'usuaris -->    
+    <label class="w3-label w3-text-brown"><b>Nom</b>
+    </label>
+    <input class="w3-input w3-border w3-sand" name="nom" type="text" placeholder="Nom i Cognom" required></p>
+    <p>
+    <label class="w3-label w3-text-brown"><b>Diada</b></label>
+    <br>
+    <select name="Diada">
+	<option value="Grillats">Grillats (4 de maig)</option>
+	<option value="Emboirats">Emboirats (11 de maig)</option>
+	<option value="Penjats">Penjats (18 de maig)</option>
+	<option value="Bergants">Bergants (25 de maig)</option>
+	<option value="Llunatics">Llunatics (1 de juny)</option>
+	</select> </p>
+    <p>
+    <label class="w3-label w3-text-brown"><b>Hora Sortida</b></label>
+    <input class="w3-sand w3-border" type="time" name="sortida" placeholder="Ex: 14:00" max="16:00" min="13:30" step="5" required>
+    </p>
+    <p>
+    <label class="w3-label w3-text-brown"><b>Hora Tornada</b></label>
+    <input class="w3-sand w3-border" type="time" name="sortida" placeholder="Ex: 22:00" max="7:00" min="18:00" step="5" required>
+    </p>
+    
+    <!-- Ja constarà al expedient
+    <p>
+    <label class="w3-label w3-text-brown"><b> Al·lergies Alimentices</b></label>
+    <input class="w3-input w3-border w3-sand" name="last" type="text"></p>
+    -->
+   	<p>
+    <label class="w3-label w3-text-brown"><b>Portes cotxe?</b></label>
+    <br>
+    <input class="w3-radio" type="radio" name="cotxes" value="si" required>
+    <label class="w3-validate">Si</label>
+
+    <input class="w3-radio" type="radio" name="cotxes" value="no">
+    <label class="w3-validate">No</label>
+    </p>
+    <p>
+    <button class="w3-btn w3-brown">Register</button></p>
+    </form>
+    <a href="assistencia.html" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>Tornar</strong></a><br>
+</div>
+
+</body>
+</html> 

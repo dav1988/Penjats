@@ -1,0 +1,63 @@
+<!DOCTYPE html metal:define-macro="layout">
+<html lang="{{request.locale_name}}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pyramid web application">
+    <meta name="author" content="Pylons Project">
+    <link rel="shortcut icon" href="${request.static_url('penjats:static/pyramid-16x16.png')}">
+
+    <title i18n:translate="">Assistència</title>
+
+
+    <!-- Custom styles for this scaffold -->
+    <link href="${request.static_url('penjats:static/plantilla1.css')}" rel="stylesheet">
+    <link href="${request.static_url('penjats:static/w3.css')}" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <header>
+  <div class="topboard w3-container w3-red2"> 
+    <div style="margin-top: 15px;margin-bottom: 15px"   id="logo">
+        <a href="/"><img  src="${request.static_url('penjats:static/2n7pqvb.png')}" border="0" alt="logo penjats"></a>
+    </div>
+    <div style="margin-top: 20px" id="logo2">
+      <h5 i18n:translate=""><strong> APP Assistència
+      <br>
+      Penjats Del Campus Manresa</strong></h5>
+    </div>
+    <div class="caixaidioma">
+      <div style="margin-bottom: 5px" id="idioma">
+      <a href="/canvia_idioma.html?idioma=default" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>CA</strong></a>
+      </div>
+      <div style="margin-bottom: 5px" id="idioma">
+      <a href="/canvia_idioma.html?idioma=es" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>ES</strong></a>
+      </div>
+      <div style="margin-bottom: 5px" id="idioma">
+      <a href="/canvia_idioma.html?idioma=en" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>EN</strong></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+            <div metal:define-slot="content">No content</div>
+          
+
+
+
+
+    <div class="peu_pagina w3-col l12">
+      <center><h6> © uncopyright  &emsp;&emsp;&emsp;&emsp;  tel. XXXXXXXXX &emsp;&emsp;&emsp;&emsp;   penjatsdelcm@gmail.com  &emsp;&emsp;&emsp;&emsp;   <a href="https://www.facebook.com/penjatscm/"> Penjats del Campus </a></h6></center>
+    </div>
+
+
+
+
+
+
+  </body>
+</html>

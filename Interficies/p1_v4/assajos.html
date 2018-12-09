@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/lib/w3.css">
+	<link rel="stylesheet" type="text/css" href="w3.css" />
+	<link rel="stylesheet" type="text/css" href="plantilla1.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<script>
+	$(function () {
+	$.datepicker.setDefaults($.datepicker.regional["es"]);
+	$("#datepicker").datepicker({
+		firstDay: 1
+	});
+	});
+	</script>
+ </head>
+<title>Assajos</title>
+<body>
+
+<div class="w3-card-4">
+  	<div class="w3-container w3-red2">
+        <div style="margin-top: 5px;margin-bottom: 5px"   id="logo">
+            <a href="assistencia.html"><img  src="2n7pqvb.png" border="0" alt="logo penjats"></a>
+        </div>
+        <div id="logo">
+        <h4><strong>Assistència Assajos</strong></h4>
+        </div>
+  	</div>
+  	<form class="w3-container" action="/action_page.php">
+    <p> 
+    <!-- mentres no tinguem registre d'usuaris -->    
+    <label class="w3-label w3-text-brown"><b>Nom</b>
+    </label>
+    <input class="w3-input w3-border w3-sand" name="nom" type="text" placeholder="Nom i Cognom" required></p>
+    <p>
+    <label class="w3-label w3-text-brown"><b>Dia d'Assaig</b></label>
+    <br>
+    
+<div id="datepicker" required></div>
+
+
+    <p>
+    <label class="w3-label w3-text-brown"><b>Hora Arribada</b></label>
+    <input class="w3-sand w3-border" type="time" name="sortida" placeholder="Ex: 14:00" max="16:00" min="13:30" step="5" required>
+    </p>
+    <p>
+    <label class="w3-label w3-text-brown"><b>Hora Marxar</b></label>
+    <input class="w3-sand w3-border" type="time" name="sortida" placeholder="Ex: 22:00" max="7:00" min="18:00" step="5" required>
+    </p>
+    
+   	
+    <p>
+    <button class="w3-btn w3-brown">Register</button></p>
+    </form>
+    <a href="assistencia.html" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>Tornar</strong></a><br>
+</div>
+
+</body>
+</html> 

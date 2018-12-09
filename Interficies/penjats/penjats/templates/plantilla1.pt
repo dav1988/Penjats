@@ -1,0 +1,56 @@
+<!DOCTYPE html metal:define-macro="plantilla1">
+<html i18n:domain="penjats" lang="{{request.locale_name}}" xmlns="http://www.w3.org/1999/xhtml" xmlns:tal="http://xml.zope.org/namespaces/tal">
+<head>
+  <meta charset= "utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/lib/w3.css">
+  <link rel="stylesheet" type="text/css" href="w3.css" />
+  <link rel="stylesheet" type="text/css" href="plantilla1.css"/>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <link rel="shortcut icon" href="${request.static_url('penjats:static/pyramid-16x16.png')}">
+  <link href="${request.static_url('penjats:static/plantilla1.css')}" rel="stylesheet">
+  <link href="${request.static_url('penjats:static/w3.css')}" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<title>${titol}</title>
+</head>
+<body>
+<header>
+  <div class="w3-container w3-red2">
+    <div style="margin-top: 15px;margin-bottom: 15px"   id="logo">
+        <a href="/"><img  src="${request.static_url('penjats:static/2n7pqvb.png')}" border="0" alt="logo penjats"></a>
+    </div>
+    <div style="margin-top: 20px" id="logo2">
+    <h4><strong>${titol2}</strong></h4>
+    </div>
+    <div class="caixaidioma">
+      <div style="margin-bottom: 5px" id="idioma">
+      <a href="/canvia_idioma.html?idioma=default?url=default" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>CA</strong></a>
+      </div>
+      <div style="margin-bottom: 5px" id="idioma">
+      <a href="/canvia_idioma.html?idioma=es" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>ES</strong></a>
+      </div>
+      <div style="margin-bottom: 5px" id="idioma">
+      <a href="/canvia_idioma.html?idioma=en" onclick="w3_close()" class="w3-padding w3-hover-white"><strong>EN</strong></a>
+      </div>
+    </div>
+  </div>
+
+</header>
+<div class="w3-card-4">
+
+          <div metal:define-slot="content">No content</div>
+          <a href="/" onclick="w3_close()" class="w3-padding w3-hover-white"><strong i18n:translate="">Tornar</strong></a><br> 
+ 
+</div>
+<footer>
+    <div class="peu_pagina w3-col l12">
+      <center><h6> © uncopyright  &emsp;&emsp;&emsp;&emsp;  tel. XXXXXXXXX &emsp;&emsp;&emsp;&emsp;   penjatsdelcm@gmail.com  &emsp;&emsp;&emsp;&emsp;   <a href="https://www.facebook.com/penjatscm/"> Penjats del Campus </a></h6></center>
+    </div>
+    
+</footer>
+      
+   
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+	background: white; 
+	color:black;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+/*button{
+	position: relative;
+
+	margin-left:40%;
+}*/
+
+h1{
+	color:black;
+	text-align: left;
+}
+
+header{
+	width: 100%;
+}
+
+p{
+	font-family: courier;
+	color:black;
+	font-size: 15px;
+}
+
+
+
+/* amplada total com a màxims? */
+.ampladatotal{
+	max-height: 200;
+	max-width: 200;
+}
+
+
+.caixa{
+	position: relative;
+    float: left;
+    left: 100%;
+    width: 100%;
+    margin-left: -100%;
+    height: ;
+}
+
+.text1{
+	color:red;
+	text-align: center;
+}
+
+.blocdret{
+    /*margin-left: 55%;
+	max-width: 45%;*/
+	margin-top: 15px;
+	float: right;
+	position: inherit;
+	width: 500px;
+}
+
+.blocesquerre{
+	/*
+    margin-left: 5%;
+	max-width: 50%;*/
+	margin-top: 15px;
+	float: left;
+	position: inherit;
+	width: 55%;
+	margin-left: 5%;
+}
+
+.peu_pagina{
+	clear: both;
+}
+
+.requadre{
+	margin-left: 100px;
+	margin-right: 100px;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-top-width: 2px;
+	border-top-style: solid;	
+}
+
+.topboard{
+	/*position: inherit;
+	top: 0;
+	right: 0;
+	left: 0;*/
+
+}
+.xxss{
+	float: left;
+	margin-left: 25px;
+}
+
+#logo{
+	float: left;
+	max-width: 50%; 
+}
+
+#logo2{
+	float: right;
+	max-width: 50%; 
+}

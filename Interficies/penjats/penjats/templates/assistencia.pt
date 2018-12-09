@@ -1,0 +1,35 @@
+<div metal:use-macro="load: layout.pt" i18n:domain="penjats">
+    <div metal:fill-slot="content">
+    
+
+
+  		<div class="w3-row">
+    		<div class="w3-col l3 w3-red2" style="float: right;font-size: 15px">
+        		<nav class="w3-sidenav w3-red2 w3-collapse w3-large w3-padding" style="z-index:3;width:100%;font-weight:bold" id="mySidenav"><h6>
+        			<a href="assajos.html" onclick="w3_close()" class="w3-padding w3-hover-white" ><strong i18n:translate="">Assajos</strong><br> </a> 
+        			<a href="diades.html" onclick="w3_close()" class="w3-padding w3-hover-white"><strong i18n:translate="">Diades</strong><br> </a>
+        			<a href="esdeveniments.html" onclick="w3_close()" class="w3-padding w3-hover-white"><strong i18n:translate="">Esdeveniments</strong></a> 
+        		</h6></nav>
+        		<div class="requadre_dret">
+                	      <a class="twitter-timeline"  href="https://twitter.com/hashtag/castellers" data-widget-id="874684672399298560">#castellers tuits</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+      			</div>
+    		</div>
+    		<div class="w3-col l9" style="margin-top: 100px">
+      			<div class="requadre">
+          			<p> <font face="Courier">
+                <p class="requadre3" tal:repeat="dada esdeveniments">${dada['text']} <br/><br/><i><small i18n:translate="">Creat ${dada['data']}</small></i></p>
+                </font></p>
+        		</div>
+        		<div class="requadre2">
+                    
+                    <center> <a class="twitter-timeline"  href="https://twitter.com/hashtag/castellers" data-widget-id="874684672399298560">#castellers tuits</a></center>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                      <a class="twitter-timeline"  href="https://twitter.com/hashtag/castellers" data-widget-id="874684672399298560">#castellers tuits</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+    		</div>
+		</div>
+  	</div>
+</div>

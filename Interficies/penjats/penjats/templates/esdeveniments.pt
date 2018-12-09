@@ -1,0 +1,15 @@
+<div metal:use-macro="load: plantilla1.pt" i18n:domain="penjats">
+	<div metal:fill-slot="content">
+
+
+
+
+<h1 i18n:translate=""> Esdeveniments </h1>
+<ul>
+<p class="requadre3" tal:repeat="dada esdeveniments">${dada['text']} <br/><br/><i><small i18n:translate="">Creat ${dada['data']}</small></i></p>
+</ul>
+
+
+
+	</div>
+</div>

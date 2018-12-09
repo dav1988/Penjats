@@ -1,0 +1,52 @@
+<div metal:use-macro="load: plantilla1.pt" i18n:domain="penjats">
+    <div metal:fill-slot="content">
+
+
+ 		<form class="w3-container" method="POST" action="diades.html">
+	    <p> 
+	    <!-- mentres no tinguem registre d'usuaris -->    
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Nom</b>
+	    </label>
+	    <input class="w3-input w3-border w3-sand" name="nom" type="text" placeholder="Nom i Cognom" required i18n:attributes="placeholder"></p>
+	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Diada</b></label>
+	    <br>
+	    <select name="Diada">
+		<option tal:repeat="dada llista_dates_diada" value="${dada}">${dada}</option>
+		</select> 
+
+
+
+
+		</p>
+	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Hora sortida</b></label>
+	    <input class="w3-sand w3-border" type="time" name="sortida" placeholder="Ex: 14:00" max="16:00" min="13:30" step="5" required>
+	    </p>
+	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Hora tornada</b></label>
+	    <input class="w3-sand w3-border" type="time" name="tornada" placeholder="Ex: 22:00" max="9:00" min="18:00" step="5" required>
+	    </p>
+	    
+	    <!-- Ja constarà al expedient
+	    <p>
+	    <label class="w3-label w3-text-brown"><b> Al·lergies Alimentices</b></label>
+	    <input class="w3-input w3-border w3-sand" name="last" type="text"></p>
+	    -->
+	   	<p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Portes cotxe?</b></label>
+	    <br>
+	    <input class="w3-radio" type="radio" name="cotxe" value="si" required>
+	    <label class="w3-validate" i18n:translate="">Si</label>
+
+	    <input class="w3-radio" type="radio" name="cotxe" value="no">
+	    <label class="w3-validate" i18n:translate="">No</label>
+	    </p>
+	    <p>
+	    <button class="w3-btn w3-brown" i18n:translate="">Enviar</button></p>
+	    </form>
+
+
+
+	</div>
+</div>

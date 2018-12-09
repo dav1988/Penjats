@@ -1,0 +1,129 @@
+#
+# Spanish translations for PACKAGE package
+# This file is distributed under the same license as the PACKAGE package.
+# Eduard <eduard@movistar>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE 1.0\n"
+"POT-Creation-Date: 2017-05-11 14:04+0200\n"
+"PO-Revision-Date: 2017-05-09 13:27+0200\n"
+"Last-Translator: Eduard <eduard@movistar>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Lingua 4.13\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: penjats/views.py:60 penjats/templates/admin.pt:4
+#: penjats/templates/assistencia.pt:10
+msgid "Diades"
+msgstr "Diadas"
+
+#: penjats/views.py:61
+msgid "Registre diades"
+msgstr "Registro diadas"
+
+#: penjats/views.py:77 penjats/templates/admin.pt:26
+#: penjats/templates/assistencia.pt:9
+msgid "Assajos"
+msgstr "Ensayos"
+
+#: penjats/views.py:78
+msgid "Assistència assajos"
+msgstr "Asistencia ensayos"
+
+#: penjats/views.py:85
+msgid "Confirmació"
+msgstr "Confirmación"
+
+#: penjats/views.py:86 penjats/views.py:118
+msgid "Confirmació assistència"
+msgstr "Confirmación asistencia"
+
+#: penjats/views.py:108
+msgid "Admin"
+msgstr "Admin"
+
+#: penjats/views.py:109
+msgid "Panell d'administració"
+msgstr "Panel de administración"
+
+#: penjats/views.py:117 penjats/templates/esdeveniments.pt:7
+#: penjats/templates/assistencia.pt:11
+msgid "Esdeveniments"
+msgstr "Esdevenimientos"
+
+#: penjats/templates/plantilla1.pt:43
+msgid "Tornar"
+msgstr "Volver"
+
+#: penjats/templates/diades.pt:8 penjats/templates/assajos.pt:8
+msgid "Nom"
+msgstr "Nombre"
+
+#: penjats/templates/diades.pt:10 penjats/templates/assajos.pt:10
+msgid "Nom i Cognom"
+msgstr "Nombre y Apellido"
+
+#: penjats/templates/diades.pt:12
+msgid "Diada"
+msgstr "Diada"
+
+#: penjats/templates/diades.pt:18 penjats/templates/assajos.pt:25
+#, fuzzy
+msgid "Hora sortida"
+msgstr "Hora Salida"
+
+#: penjats/templates/diades.pt:22
+msgid "Hora tornada"
+msgstr "Hora Vuelta"
+
+#: penjats/templates/diades.pt:32
+msgid "Portes cotxe?"
+msgstr "Llevas coche"
+
+#: penjats/templates/diades.pt:35
+msgid "Si"
+msgstr "Si"
+
+#: penjats/templates/diades.pt:38
+msgid "No"
+msgstr "No"
+
+#: penjats/templates/diades.pt:41 penjats/templates/assajos.pt:31
+#, fuzzy
+msgid "Enviar"
+msgstr "Enviar"
+
+#: penjats/templates/assajos.pt:13
+msgid "Assaig"
+msgstr "Ensayo"
+
+#: penjats/templates/assajos.pt:21
+msgid "Hora arribada"
+msgstr "Hora llegada"
+
+#: penjats/templates/admin.pt:47
+msgid "Afegeix diada"
+msgstr "Añadir diada"
+
+#: penjats/templates/admin.pt:52
+msgid "Afegeix assaig"
+msgstr "Añadir ensayo"
+
+#: penjats/templates/admin.pt:56
+msgid "Afegeix event"
+msgstr "Añadir evento"
+
+#: penjats/templates/assistencia.pt:21
+msgid "Creat ${dada['data']}"
+msgstr "Creado ${dada['data']}"
+
+#: penjats/templates/confirmacio.pt:4
+msgid "Dades registrades"
+msgstr "Datos registrados"
+
+#~ msgid "Hora Marxar"
+#~ msgstr "Hora Salida"

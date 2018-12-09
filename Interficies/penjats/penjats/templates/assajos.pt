@@ -1,0 +1,36 @@
+<div metal:use-macro="load: plantilla1.pt" i18n:domain="penjats">
+    <div metal:fill-slot="content">
+
+
+	<form class="w3-container" method="POST" action="assajos.html">
+	    <p> 
+	    <!-- mentres no tinguem registre d'usuaris -->    
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Nom</b>
+	    </label>
+	    <input class="w3-input w3-border w3-sand" name="nom" type="text" placeholder="Nom i Cognom" required i18n:attributes="placeholder"></p>
+   	    
+   	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Assaig</b></label>
+	    <br>
+		<select name="DatesAssaig">
+		<option tal:repeat="dada llista_dates_assaig" value="${dada}">${dada}</option>
+		</select> </p>
+
+	    
+	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Hora arribada</b></label>
+	    <input class="w3-sand w3-border" type="time" name="Arribada" placeholder="Ex: 13:30" max="15:30" min="13:30" step="5" required>
+	    </p>
+	    <p>
+	    <label class="w3-label w3-text-brown"><b i18n:translate="">Hora sortida</b></label>
+	    <input class="w3-sand w3-border" type="time" name="Sortida" placeholder="Ex: 15:30" max="15:30" min="13:30" step="5" required>
+	    </p>
+	    
+	   	
+	    <p>
+	    <button class="w3-btn w3-brown" i18n:translate="">Enviar</button></p>
+	</form>
+
+    </div>
+
+</div>
